@@ -1,0 +1,22 @@
+### NetBeans template 
+nbproject/private/
+build/
+ nbbuild/ 
+dist/
+ nbdist/ 
+nbactions.xml 
+.nb-gradle/
+
+### IntelliJ 
+/out/
+/target/
+/.idea/
+*.iml
+
+#macOS
+.DS_Store
+
+bundle.js
+bundle.js.map
+src/main/resources/frontend/webui/app/lib/
+src/main/resources/frontend/webui/node_modules/
