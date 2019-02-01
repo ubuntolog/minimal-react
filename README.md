@@ -1,13 +1,8 @@
-# Home.Ht application form for tenants
-This is a simple web application that has a Java backend and a React-based frontend.
+# Minimal React Application
+This is a simple web application that has a Java backend and a React-based frontend. The backend uses a simple H2 database (stored in a file).
+The main page contains a minimal example of a D3 bar chart.
 
-# How do I start it?
-
-```
-mvn clean package docker:build
-```
-
-## Development
+## Running
 First, you need to build the frontend. Go to `src/main/resources/frontend` folder and run (npm and node are required):
 ```
 make dependencies
