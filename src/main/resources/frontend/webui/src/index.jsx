@@ -17,7 +17,7 @@ import {fetchApiInfo} from './actions/actions';
 import {Grid, Row, Col, Button, Navbar, Well, Image} from 'react-bootstrap';
 
 import {RegistrationContainer} from './containers/RegistrationContainer';
-
+import Graph from './components/Graph';
 import ErrorMessage from './components/ErrorMessage';
 
 require('../app/css/app.css');
@@ -62,7 +62,7 @@ class Frame extends React.Component {
                                 <Image src="/images/house.svg" responsive />
                             </Col>    
                             <Col xs={10} sm={10} md={10} lg={10}>
-                                <h2>Application form for tenants</h2>
+                                <h2>Minimal React Application</h2>
                             </Col>
                         </Row>
                     </Well>
@@ -91,8 +91,8 @@ class App extends React.Component {
                 <div>
                     <Router history={history}>
                         <Route path={window.APP_CONTEXT_PATH+'/'} component={Frame}>
-                            <IndexRoute component={RegistrationContainer}/>
-                        
+                            <IndexRoute component={Graph}/>                            
+                            <Route path={window.APP_CONTEXT_PATH+'/registration'} component={RegistrationContainer} />                        
                             <Route path='*' component={NotFound} />
                         </Route>
                     </Router>
