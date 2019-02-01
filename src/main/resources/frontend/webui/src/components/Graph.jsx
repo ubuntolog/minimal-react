@@ -20,7 +20,7 @@ class Graph extends Component {
 
       const node = this.node     
       const dataMax = max(data)
-      
+
       const yScale = scaleLinear()
          .domain([0, dataMax])
          .range([0, maxHeight])
@@ -45,7 +45,9 @@ class Graph extends Component {
          .attr('y', d => maxHeight - yScale(d))
          .attr('height', d => yScale(d))
          .attr('width', 25)
-      console.log("Something");
+
+      select(node)
+            .attr("transform", "rotate(-45)");
    }
 render() {
       return <svg ref={node => this.node = node}
